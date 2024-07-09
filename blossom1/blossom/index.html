@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="gsap.min.js"></script>
+
+ -->
+ <script class="popup.js"></script>
+
+</head>
+<body>
+  <!--  <div class="popup" id="popup">
+        <div class="popup-content" style="background-color: rgb(242, 214, 185); ;">
+            <h2 style="color: black;">Subscribe to Blossom Bazar</h2>
+            <p style="color: black;">Get in touch about sales and updates!</p>
+            <form id="subscribeForm">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn" id="submit">Subscribe</button>
+            </form>
+            <button id="noButton" class="btn" >No Thanks</button>
+        </div>
+    </div>
+-->
+
+
+    <!--TESTING KY LYE UPAR SUB WALA ADD -->
+    <div id="navb" class="nav">
+        <img src="logo-removebg-preview.png" alt="">
+        <h4 id="home"><a href="">Home</a> </h4>
+        <h4><a href="colllection.html">Articles/Collection</a></h4>
+        <h4><a href="">Customize Design</a></h4>
+        <h4><a href="about.html">About</a></h4>
+        <h4><a href="">Contact</a></h4>
+
+    <div class="nav-search">
+        <div class="search-icon">
+            <i class="fas fa-search" class="searchicon"></i>
+        </div>
+        <input type="text" placeholder="search items" class="bar">
+        
+        <select class="select">
+            <option value="">All</option>
+        </select>
+    </div>
+    <div class="login">
+       <a href="login.html"> <i class="fa-solid fa-user"></i></a>
+    </div>
+    <div class="cart">
+        <a href="cart.html">
+          <i class="fas fa-shopping-cart fa-1x"></i>
+          <span class="badge badge-pill badge-primary">7</span>
+        </a>
+      </div>
+    </div>
+    <div id="Cursor"class="cursor"></div>
+    <div class="cursor-blur"></div>
+    <div class="vid-div">
+    <video autoplay loop muted src="bazzar2.mp4" class="vid"></video></div>
+    <div class="main">
+        <div class="page1">
+            <h1>BLOSSOM بازار</h1>
+            <h2>Welcome to blossom bazar for customize handmade dupattas</h2>
+            <h3>where elegance meets individuality.  </h3>
+        </div>
+        <div class="page2" >
+ <!-- <marquee behavior="" direction=""></marquee>   U CAN ALSO USE THIS AS A SCROLLER AB MARUEE KO SEARCH --> 
+       <div class="scroller">
+        <div class="scroller-in">
+            <h4>Subscribe </h4>
+            <h4>us</h4>
+            <h4>for </h4>
+            <h4>nEW</h4>
+            <h4>Sale</h4>
+            <h4>Updates!!</h4>
+        </div>
+        <div class="scroller-in">
+            <h4>Subscribe </h4>
+            <h4>us</h4>
+            <h4>for </h4>
+            <h4>New</h4>
+            <h4>Sale</h4>
+            <h4>Updates!!</h4>
+        </div>
+       </div>
+       <div class="collection">
+        <div class="collection-box">
+            <div class="head-coll">
+                <h2 class="head1">MOST SELLED ITEMS</h2>
+                <h3><a href="" class="head2">View More Collection ></a></h3>
+            </div>
+            <div class="collection-pic">
+                <div class="articles">
+                <img src="img1.jpeg" alt="" class="pic1 ">
+                <div class="price-tag" style="color: black;">
+                    <div class="name">GUL</div> 
+                    <div class="price">Rs.4800</div>
+                </div> 
+                
+            </div>
+
+                <div class="articles">
+                <img src="art5.jpg" alt="" class="pic1 ">
+                
+                <div class="price-tag" style="color: black;">
+                    <div class="name">AANGAN</div> 
+                    <div class="price">Rs.2800</div>
+                </div> 
+            </div>
+       
+
+                <div class="articles">
+                <img src="arti6.jpg" alt="" class="pic1 ">
+                <div class="price-tag" style="color: black;">
+                    <div class="name">OLIVE</div> 
+                    <div class="price">Rs.3300</div>
+                </div> 
+            </div>
+
+                <div class="articles">
+                <img src="art3.jpg" alt="" class="pic1 ">
+               <div class="price-tag"  style="color: black;">
+                  <div class="name">BANAFSHI</div> 
+                    <div class="price">Rs.3400</div>
+                </div> 
+            </div>
+          
+                <!-- <img src="art5.jpg" alt="" class="pic1">
+                <img src="arti6.jpg" alt="" class="pic1">
+                <img src="art3.jpg" alt="" class="pic2 "> -->
+           
+            <!-- <div class="head-coll-1">
+                 <div class="price-tag">
+                <p style="color: black;" class="gulab">GULAAB 
+                <br > </p>
+                <p class="price">Rs.2300</p></div>
+                <p style="color: black;">ANGAAN  <br class="price"> Rs.2800</p>
+                <p style="color: black;">OLIVE  <br class="price"> Rs.3300</p>
+                <p style="color: black;" class="banafshi">BANAFSHI  <br class="price"> Rs.3400</p>
+                
+            </div> -->
+        </div>
+        </div>   
+        </div>
+
+        <div class="collection">
+            <div class="collection-box">
+               
+                <div class="collection-pic">
+                    <div class="articles">
+                    <img src="art4.jpg" alt="" class="pic1 ">
+                    <div class="price-tag" style="color: black;">
+                        <div class="name">GUL POSH</div> 
+                        <div class="price">Rs.4800</div>
+                    </div> 
+                    
+                </div>
+    
+                    <div class="articles">
+                    <img src="artic9.jpg" alt="" class="pic1 ">
+                    
+                    <div class="price-tag" style="color: black;">
+                        <div class="name">Kanwal</div> 
+                        <div class="price">Rs.2800</div>
+                    </div> 
+                </div>
+           
+    
+                    <div class="articles">
+                    <img src="img3.jpeg" alt="" class="pic1 ">
+                    <div class="price-tag" style="color: black;">
+                        <div class="name">Ulfat</div> 
+                        <div class="price">Rs.4300</div>
+                    </div> 
+                </div>
+    
+                    <div class="articles">
+                    <img src="article2.jpg" alt="" class="pic1 ">
+                   <div class="price-tag"  style="color: black;">
+                      <div class="name">Atish</div> 
+                        <div class="price">Rs.3300</div>
+                    </div> 
+                </div>
+              </div>
+                    <!-- <img src="art5.jpg" alt="" class="pic1">
+                    <img src="arti6.jpg" alt="" class="pic1">
+                    <img src="art3.jpg" alt="" class="pic2 "> -->
+               
+                <!-- <div class="head-coll-1">
+                     <div class="price-tag">
+                    <p style="color: black;" class="gulab">GULAAB 
+                    <br > </p>
+                    <p class="price">Rs.2300</p></div>
+                    <p style="color: black;">ANGAAN  <br class="price"> Rs.2800</p>
+                    <p style="color: black;">OLIVE  <br class="price"> Rs.3300</p>
+                    <p style="color: black;" class="banafshi">BANAFSHI  <br class="price"> Rs.3400</p>
+                    
+                </div> 
+            </div>
+            </div>   
+            </div>
+        
+        <div class="card-container" style="background-color: rgb(242, 214, 185);">
+            <div class="card" id="card1">
+                <div class="price-tag"  style="color: black;">
+                    <div class="name">GUL POSH</div> 
+                      <div class="price">Rs.3400</div>
+                  </div> 
+            </div>
+            <div class="card" id="card2">
+                <div class="overlay">
+                    <h4>Kanwal </h4>
+                    <p>Blooms in Motion: Dive into a world of ethereal beauty with our organza dupatta adorned with delicate water lilies</p>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="overlay">
+                    <h4>Ulfat </h4>
+                    <p>Lavender Dreams: Drift into serenity with our organza dupatta in soothing lavender, a graceful accessory for every occasion</p>
+                </div>
+            </div>
+            <div class="card" id="card4">
+                <div class="overlay">
+                    <h4>Atish </h4>
+                    <p>Lavender Dreams: Drift into serenity with our organza dupatta in soothing lavender, a graceful accessory for every occasion</p>
+                </div>
+            </div>
+           
+           </div>-->
+           
+       <!--
+
+       
+       <div id="about-us" class="about-us" style="background-color: white;">
+        <img src="dupata1.jpeg" alt="">
+        <div class="about-me">
+            <h3 style="color: black;">About Me</h3>
+            <p style="color: black;">I'm an artist specializing in hand-painted dupattas, bringing vibrant colors and intricate designs to traditional wear. My creative journey unfolds under the brand name BlossomBazar, where each piece tells a unique story of artistry and culture. Proudly hailing from Pakistan, I draw inspiration from its rich heritage and diverse landscapes, infusing my creations with a touch of elegance and tradition.</p>
+        </div>
+        <img src="dupata2.jpeg" alt="">
+       </div>
+       <div class="card-container" style="background-color: white;">
+        <div class="card" id="card1">
+            <div class="overlay">
+                <h4>Gul Posh </h4>
+                <p>"Elegance in White: Embrace timeless sophistication with our organza dupatta in pure, pristine white.</p>
+            </div>
+        </div>
+        <div class="card" id="card2">
+            <div class="overlay">
+                <h4>Kanwal </h4>
+                <p>Blooms in Motion: Dive into a world of ethereal beauty with our organza dupatta adorned with delicate water lilies</p>
+            </div>
+        </div>
+        <div class="card" id="card3">
+            <div class="overlay">
+                <h4>Ulfat </h4>
+                <p>Lavender Dreams: Drift into serenity with our organza dupatta in soothing lavender, a graceful accessory for every occasion</p>
+            </div>
+        </div>
+       </div> -->
+      <!-- <div class="green">
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+        <div class="green-info">
+            <h4>Sign Up for free and get updates and amazing deals . </h4>
+        </div>
+        <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+       </div>-->
+    
+    
+
+    <section class="footer_section" id="footer_section " style="color: black;">
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-6" style="color: black;">
+                        <div class="footer_title">
+                            <a href="index.html">
+                                <img src="logo-removebg-preview.png" width="150px" alt="logo">
+                            </a>
+                        </div>
+                        <div class="contact">
+                            <h4>Contact with us</h4>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/blossombazar10/#" target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            
+                        </div>
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i> 
+                            <a href="blossombazar10@gmail.com">blossombazar10@gmail.com</a>
+                        </div>
+                        <div class="phone">
+                            <a href="">
+                                <i class="fa-solid fa-phone">+92 311 123736</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footer_title">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <div class="footer_links" style="color: black;">
+                            <ul>
+                                <li><a href="index.html">About</a></li>
+                                <li><a href="javascript:;">Articles/Collection</a></li>
+                                <li><a href="javascript:;">Get Coupon</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footer_title">
+                            <h3>New Products</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="javascript:;">Organza Dupaatta</a></li>
+                                <li><a href="javascript:;">Organza Sarhi</a></li>
+                                <li><a href="javascript:;">Customize Dresses</a></li>
+                                <li><a href="javascript:;">Silk Dresses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6" style="color: black;">
+                        <div class="footer_title">
+                            <h3>Support</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="javascript:;">Frequently Asked Questions</a></li>
+                                <li><a href="javascript:;">Terms & Conditions</a></li>
+                                <li><a href="javascript:;">Privacy Policy</a></li>
+                                <li><a href="javascript:;">Report a Payment Issue</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top">
+                <h6 class="text-center mt-3">Copyright ©2024 زینب ارشاد <span>Privacy</span></h6>
+            </div>
+          
+        </footer>
+       <!-- <div class="backtop">
+            <a id="button" href="#top" class="btn btn-lg custom-butn" role="button">
+                <i class="fas fa-chevron-up text-dark"></i>
+            </a>
+    
+    </div>  -->
+    </section>
+    
+   
+</div>
+   
+</div>
+
+<!--SCRIPT PART JAHA NAV KI ANIMATION OR CURSOR WGHAIRA KA POINT-->
+
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+crossorigin="anonymous"></script>
+
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+    integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+    integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+  crossorigin="anonymous"></script>
+    
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+    integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+    integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

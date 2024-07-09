@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+
+</head>
+<body>
+    <div class="login-form">
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <h2>Log In</h2>
+                    <form id="loginForm" method="post">
+                        @csrf
+                        <input type="email" id="email" name="email" placeholder="abc@gmail.com" required autofocus="">
+                        <input type="password" id="password" name="password" placeholder="Enter Password" required autofocus="">
+                        <p><a href="#">Forget Password?</a></p>
+                        <button type="submit" class="btn">Login</button>
+                        <p class="account">Don't Have an account?<a href="signup.html">Register</a></p>
+                    </form>
+                    <div class="form-img">
+                        <img src="login.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,755 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: white;
+
+
+
+
+}
+
+
+/*POP UP */
+
+
+.homepage-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 24px);
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+#noButton {
+    background-color: #dc3545;
+}
+
+#noButton:hover {
+    background-color: #c82333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*END*/
+
+html ,body{
+    width:100%;
+    height:100%;
+   
+
+}
+*::selection {
+    background-color: #2e2b2b;
+    color: #95c11e;
+  }
+.nav{
+    height: 150px;
+    width: 100%;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+  
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    position: fixed;
+    z-index: 999;
+}
+.nav img{
+    height:75px;
+justify-self: start;
+}
+.nav h4{
+    text-transform:uppercase;
+    font-size: 14px;
+    color: bisque;
+}
+.nav h4 a{
+    text-decoration: none;
+}
+.vid{
+ height: 100%;
+  width: 100%;
+  object-fit:fill;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.main{
+position: relative
+;
+background-color: rgba(0, 0, 0, 0.342);
+}
+.page1{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+.page1 h1{
+    font-size: 60px;
+    font-weight:90px;
+    position: relative;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+  
+  
+    
+}
+.page1 h1::before{
+    content:"BLOSSOM بازار" ;
+    position: absolute;
+    color: black;
+    top: -6px;
+left: -6px;
+-webkit-text-stroke: 1px rgb(159, 105, 142);
+z-index: -1;
+}
+.page1 h2{
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.page1 h3{
+    font-size: 18px;
+    font-weight: 700;
+    width: 45%;
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    margin-bottom: 30px;
+}
+/* #Cursor{
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    background-color: #edeee9;
+    border-radius: 50%;
+    z-index:99;
+}
+.cursor-blur{
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    background-color: #b45786; 
+    border-radius: 50%;
+    filter: blur(70px);
+    z-index: 9;
+} */
+.scroller{
+  
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(140, 26, 10);
+    cursor: pointer;
+}
+.scroller-in{
+    white-space: nowrap;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: forscroll 7s linear 0s infinite ;
+
+}
+/*IS WEBKIT SCROLLBAR SY JO NECY ARHI HUGI BAR USKO REMOVE */
+.scroller::-webkit-scrollbar {
+    display: none; 
+    
+  }
+.scroller h4 {
+    display: inline-block;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'montserrat';
+    margin-right: 40px;
+
+    transition: all linear 0.9s;
+    color: #ffffff;
+
+   /* -webkit-text-stroke: 2px #9c5b8d; */
+  }
+
+@keyframes forscroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    /*IS me na sroll hurhi animation hurhi yha */
+}
+.scroller h4:hover{
+   color: rgb(230, 181, 155);
+    -webkit-text-stroke: 1px  rgb(166, 90, 118);
+}
+.about-us{
+    height: 60vh;
+    width: 95%; /* right side se video show krwanay ke liya isay adjust krna*/
+    margin-left: 35px; /* lefts side se vide show krwanay ke liye isay adjust krna */
+    font-family: 'Cabin Condensed',sans-serif, cursive;
+    display: flex;
+    padding : 0px 30px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.about-us img{
+    height: 200px;
+    width: 200px;
+border-radius: 10%;
+object-fit: cover;
+}
+.about-me{
+width: 50%;
+text-align: center;
+font-family: 'Cabin Condensed',sans-serif, cursive;
+
+}
+.about-me h3{
+    font-size:3.1rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-family: 'Cabin Condensed',sans-serif, cursive;
+}
+.about-me p{
+    font-size: 15px;
+
+line-height: 20px;
+
+}
+.about-me h3:hover{
+    color:  #7d2e59;
+    -webkit-text-stroke: 2px  #b579b9;
+}
+.card-container{
+    
+    height: 100vh;
+   padding-left: 39px;
+   padding-right: 39px;
+    display: flex;
+   
+    align-items: center;
+    gap: 40px;
+    position: relative;
+  /*  z-index:10; tilting ky lye*/ 
+   
+}
+.card{
+   
+   justify-content: center;
+   align-items: center;
+    overflow: hidden;
+    width: 270px;
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+
+}
+#card1{
+    background-image: url(art4.jpg);
+}
+#card2{
+    background-image: url(artic9.jpg);
+}
+#card3{
+    background-image: url(img3.jpeg);
+}
+#card4{
+    background-image: url(article2.jpg);
+}
+.overlay{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 60px;
+    background-color: #ada77c7d;
+    padding-top:90px;
+    opacity: 0;
+    transition: all ease 0.6s;
+
+}
+.overlay h4{
+    font-size: 25px;
+    font-weight: 800;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 20px;
+}
+.overlay p{
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    
+}
+/*
+.card:hover .overlay {
+    opacity: 1;
+  }
+.card:hover {
+    transform: rotate3d(-1, 1, 0, 20deg);
+  }
+  /*ye jo upr kia hua h is sy tilt hurha thora or sth hover effect arha*/
+  .green{
+    height: 30vh;
+    width: 100%;
+    
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left bottom, #dde1de, #bc6cb8);
+}
+.green-info h4 {
+  width: 45%;
+  line-height: 50px;
+  color: #000;
+  text-align: center;
+  font-weight: 900;
+  font-size: 17px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.green img{
+    height: 90%;
+    width: 30%;
+    object-fit: cover;
+  }
+.nav-search{
+    display: flex;
+    color: #000;
+    
+   
+  }
+.bar{
+    color: #000;
+    padding: 10px;
+    height: 20px;
+    margin-top: 7px;
+    border-radius: 8px;
+}
+.select{
+    color: #000;
+    height: 22px;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+.search-icon{
+  align-items: center;
+  margin-top: 10px;
+ 
+}
+.collection{
+    width: 100%;
+    height: 630px;
+    background-color:rgb(242, 214, 185);
+    padding-left: 30px;
+   
+    padding-top: 30px;
+    padding-right: 30px;
+    color: #000;
+    
+}
+.head-coll{
+    
+    display: flex;
+    justify-content: space-between;
+}
+/* .head-coll-1{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    font-weight: 500;
+    position: relative;
+} 
+.price {
+    position: absolute;
+    top: 100%;
+    left: 9%;
+    transform: translate(-50%, 20px);  move it below the element
+    opacity: 0; Initially hide it
+    transition: transform 0.3s ease-in-out;  opacity 0.3s ease; Smooth transition 
+    background-color: #fff;
+    border: 2px solid black;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.price-tag:hover .price {
+    transform: translateY(25px);
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+}  */
+
+
+
+ .price-tag {
+   /*
+    top: -484px;
+    left: 10px;*/
+    width: 270px;
+    height: 40px;
+   
+    display: flex;
+   /* transition: transform 0.3s ease-in-out;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.articles:hover .price-tag {
+    background-color:#ada77c7d;
+    opacity: 1;
+    /*transform: scale(1.1) rotate3d(-1, 1, 0, 20deg);
+    transform: rotate3d(-1, 1, 0, 20deg);
+
+}
+*/
+
+/* .name {
+    color: black;
+}
+
+.price {
+    color: black;
+} */
+
+
+
+
+
+/* Show price tag on hover */
+/* .head-coll-1:hover .price { */
+    /* transform: translateY(0,50%); Move it up */
+    /* opacity: 1; Show it */
+/* } */
+
+.head1{
+    color: #000;
+    width: 70%;
+    height: 30px;
+    padding: 0 10px;
+   font-family: 'Cabin Condensed',sans-serif, cursive;
+    
+}
+.head2{
+    color: #000;
+    height: 30px;
+    padding: 0 10px;
+    font-family: 'Cabin Condensed',sans-serif, cursive;
+    
+}
+.collection-pic{
+    width: 100%;
+    height:600px; 
+    padding-top: 20px;
+     gap: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-around;
+   
+  
+
+}
+.collection.collection-box p{
+    align-items: end;
+    justify-content: space-around;
+}
+.pic1 {
+    animation: fadeInLeft 2s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 270px;
+    height: 450px;
+   overflow: hidden;
+   border: 1px solid rgb(235, 107, 175);
+   border-radius: 3px;
+   
+   transition: opacity 0.3s, transform 0.3s; /* Smooth transition */
+   /* transition: transform 0.3s ease-in-out; /* Smooth transition for the transform effects */
+}
+
+@keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.pic2{
+    margin-left: 10px;
+   
+    width: 270px;
+    height: 480px;
+   /* transition: transform 0.3s ease-in-out;  Smooth transition for the transform effects */
+}
+
+/* Zoom and rotate effect on hover 
+.pic1:hover {
+   /* transform: scale(1.1) rotate3d(-1, 1, 0, 20deg); /* Combined scale and rotate3d transform */
+
+.custom-butn:hover {
+    background-color: rgb(235, 107, 175);
+    color: white; 
+}
+.social-icon:hover{
+   color: rgb(235, 107, 175);
+}
+.products{
+    padding-top: 80px;
+}
+/*FOR FOOTER PART
+.social-media a{
+    padding-left: 17px;
+}
+.footer_section{
+    border-top: 3px solid rgb(235, 107, 175);
+    border-radius: 10px;
+}
+
+
+.footer_links ul li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+.footer_links ul li a{
+    color: #000;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+.footer_links ul li a:hover{
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/* for scroll to top button 
+#button{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 100;
+}*/
+/*ONEMORE*/
+.footer_section {
+    
+    background-color:rgb(242, 214, 185);;
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+    border-top: 2px solid rgb(235, 107, 175);
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+   /* padding: 0 15px;*/
+    height: 70vh;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-3, .col-6 {
+    width: 50%;
+    padding: 25px;
+  
+   
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+
+@media (min-width: 768px) {
+    .col-md-3 {
+        width: 25%;
+    }
+}
+
+.footer_title {
+    margin-bottom: 20px;
+}
+
+.footer_title h3, .contact h6 {
+    margin: 0;
+    color: white;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.footer_links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_links li {
+    margin-bottom: 22px;
+  
+}
+
+.footer_links a {
+    color: white;
+    text-decoration: none;
+}
+
+.border-top {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.backtop {
+    height: 50px;
+    width: 50px;
+    
+    border: 2px solid #000;
+    padding-top: 10px;
+    text-align: center;
+   z-index: 999;
+}
+.backtop:hover{
+   background-color: rgb(175, 110, 131);
+}
+
+.backtop a {
+    color: black;
+    text-decoration: none;
+    
+}
+.footer_title h3{
+    font-size: 28px;
+    font-family: 'montserrat';
+    font-weight: 500;
+}
+.contact {
+    padding-left: 15px;
+  
+}
+
+.social-media{
+    padding-left: 15px;
+}
+.social-media a{
+    padding-right: 15px;
+}
+.phone{
+   
+    margin-bottom: 20px;
+}
+.email{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*yeh thora scaling ky lye*/
+.price-tag{
+color: #000;
+font-size: 20px;
+font-weight: 500;
+}
+.articles .pic1:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease-in-out;
+    opacity: 0.9;
+    cursor: pointer;
+} 
+.price-tag .name:hover{
+background-color: #8e3d3d;
+transform: scale(1.1);
+transition: 0.7s ease-in-out;
+opacity: 0.9;
+cursor: pointer;
+}
+.price-tag .price:hover{
+    background-color: #8e3d3d;
+    transform: scale(1.1);
+    transition: 0.7s ease-in-out;
+    opacity: 0.9;
+    cursor: pointer;
+    }
